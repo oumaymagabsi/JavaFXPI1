@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+
+
+<BorderPane fx:id="border_pane" prefHeight="620.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.javafxpi.gui.ModifierPost1Controller">
+   <center>
+      <VBox prefHeight="619.0" prefWidth="1200.0" stylesheets="@../css/stylesheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="menubar" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="774.0" style="-fx-background-color: #fff; -fx-border-color: #cccccc; -fx-border-width: 0px 0px 1px 0px;" stylesheets="@../css/stylehseet.css">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#open_sidebar" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="TH_LIST" size="2em" styleClass="menu-bar-btns-icon" />
+                     </graphic>
+                  </JFXButton>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" styleClass="menu-bar-search-field-box" HBox.hgrow="ALWAYS">
+                     <children>
+                        <FontAwesomeIconView glyphName="SEARCH" size="2em" styleClass="menu-bar-btns-icon" />
+                        <TextField maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" promptText="Search for a job, task or resume" style="-fx-background-color: transparent;" styleClass="menu-bar-search-field" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Calibri" size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER" size="2em" styleClass="menu-bar-btns-icon" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="442.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="LIST_ALT" size="2em" styleClass="menu-bar-btns-icon" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="482.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TH" size="2em" styleClass="menu-bar-btns-icon" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="774.0" style="-fx-background-color: #fff;">
+               <children>
+                  <VBox alignment="CENTER_LEFT">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label styleClass="lbl2" text="Gérer Promotions :" textFill="#757373">
+                           <font>
+                              <Font name="Calibri Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <HBox>
+                           <children>
+                              <Label styleClass="lbl2" text="Cité de la culture" textFill="#757373">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="MAP_MARKER" glyphStyle="-fx-fill:#757373" />
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" styleClass="lbl3" text="Preview this post" textFill="#00a1ff" underline="true">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="215.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton contentDisplay="CENTER" layoutX="10.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" styleClass="content-area-circle-btns">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="BOOKMARK" size="1.2em" styleClass="content-area-circle-btns-icon" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" layoutX="110.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" styleClass="content-area-circle-btns">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EDIT" size="1.2em" styleClass="content-area-circle-btns-icon" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" layoutX="110.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" styleClass="content-area-circle-btns">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="RECYCLE" size="1.2em" styleClass="content-area-circle-btns-icon" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox alignment="CENTER_LEFT">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox prefHeight="0.0" prefWidth="1200.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="300.0" prefWidth="774.0">
+               <children>
+                  <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="417.0" prefWidth="700.0">
+                     <children>
+                        <Label layoutX="133.0" layoutY="31.0" text="Modifier Promotion" textFill="#48a5ea">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="valider" layoutX="524.0" layoutY="349.0" onAction="#modifier" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #48A5EA;" styleClass="ajout-prom-btns" text="Valider" textFill="WHITE" />
+                         <Label layoutX="30.0" layoutY="89.0" text="Title" />
+      <Label layoutX="28.0" layoutY="155.0" text="Categorie" />
+      <Label layoutX="322.0" layoutY="89.0" text="Contenu" />
+      <Label layoutX="25.0" layoutY="269.0" text="Realisateur" />
+      <Label layoutX="23.0" layoutY="222.0" text="Description" />
+      <Label layoutX="28.0" layoutY="123.0" text="Date creation" />
+      <Label layoutX="30.0" layoutY="192.0" prefHeight="17.0" prefWidth="46.0" text="Image" />
+      <TextArea fx:id="contenu_mod" layoutX="379.0" layoutY="78.0" prefHeight="124.0" prefWidth="246.0" />
+      <TextField fx:id="title_mod" layoutX="109.0" layoutY="81.0" />
+      <TextField fx:id="description_mod" layoutX="109.0" layoutY="218.0" />
+      <TextField fx:id="realisateur_mod" layoutX="109.0" layoutY="259.0" />
+      <JFXDatePicker fx:id="datecreation_mod" layoutX="109.0" layoutY="119.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="36.0" layoutY="44.0" />
+      <Button fx:id="image_mod" layoutX="109.0" layoutY="188.0" mnemonicParsing="false" onAction="#chooseImage" prefHeight="25.0" prefWidth="149.0" text="Choisir une image        +" />
+      <ComboBox fx:id="categorie_mod" layoutX="109.0" layoutY="151.0" prefWidth="150.0" />
+      
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

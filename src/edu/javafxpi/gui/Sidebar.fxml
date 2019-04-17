@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="sidebar" alignment="TOP_CENTER" minWidth="-Infinity" prefHeight="699.0" prefWidth="303.0" styleClass="sidebar" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.javafxpi.gui.SidebarController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="80.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../../../../../Desktop/3A/PIDEV/TEMPLATES/AdminLTE-2.4.5/AdminLTE-2.4.5/dist/img/user2-160x160.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </ImageView>
+      <JFXButton ripplerFill="#e4dddd" styleClass="sidebar-user-btn" text="Neuton Barley">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#3ac990" glyphName="CIRCLE" glyphStyle="-fx-fill:#3ac990" size="1.2em" />
+         </graphic>
+      </JFXButton>
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" text="Menu" textFill="#b8b1b1">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="HOME" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Acceuil" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="prom" alignment="CENTER_LEFT" layoutX="10.0" layoutY="162.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="EDIT" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Gérer Promotions" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="pack" alignment="CENTER_LEFT" layoutX="10.0" layoutY="189.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CUBES" size="1.5em" />
+            <Label text="Gérer Packs" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="occasion" alignment="CENTER_LEFT" layoutX="10.0" layoutY="232.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Gérer Occasions" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="162.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="BULLHORN" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Gérer Publicité" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Gérer Films" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="164.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Gérer Pièces" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="199.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Gérer Festivals" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Gérer Journées PO" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="269.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="USERS" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Gérer Clubs" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="304.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="BUS" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Gérer Excursion" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="469.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="TICKET" size="1.5em" />
+            <Label text="Gérer Réservations" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label fx:id="GererPost" text="Gérer Post" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" text="" />
+            <Label fx:id="GererCategorie" text="Gérer Catégorie" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" text="" />
+            <Label fx:id="GererNewslletter" text="Gérer Newsletter" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIconView fill="#b8b1b1" glyphName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" text="" />
+            <Label fx:id="controle" text="Controle post" textFill="#b8b1b1">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

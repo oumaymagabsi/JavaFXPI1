@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTogglePane?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="border_pane" prefHeight="620.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.javafxpi.gui.ModifierNewsController">
+   <center>
+      <VBox prefHeight="619.0" prefWidth="1200.0" stylesheets="@../css/stylesheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="menubar" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="774.0" style="-fx-background-color: #fff; -fx-border-color: #cccccc; -fx-border-width: 0px 0px 1px 0px;" stylesheets="@../css/stylehseet.css">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="TH_LIST" size="2em" styleClass="menu-bar-btns-icon" />
+                     </graphic>
+                  </JFXButton>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" styleClass="menu-bar-search-field-box" HBox.hgrow="ALWAYS">
+                     <children>
+                        <FontAwesomeIconView glyphName="SEARCH" size="2em" styleClass="menu-bar-btns-icon" />
+                        <TextField maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" promptText="Search for a job, task or resume" style="-fx-background-color: transparent;" styleClass="menu-bar-search-field" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Calibri" size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER" size="2em" styleClass="menu-bar-btns-icon" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="442.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="LIST_ALT" size="2em" styleClass="menu-bar-btns-icon" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="482.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TH" size="2em" styleClass="menu-bar-btns-icon" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="774.0" style="-fx-background-color: #fff;">
+               <children>
+                  <VBox alignment="CENTER_LEFT">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label styleClass="lbl2" text="Gérer Post :" textFill="#757373">
+                           <font>
+                              <Font name="Calibri Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <HBox>
+                           <children>
+                              <Label styleClass="lbl2" text="Cité de la culture" textFill="#757373">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="MAP_MARKER" glyphStyle="-fx-fill:#757373" />
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" styleClass="lbl3" text="Preview this post" textFill="#00a1ff" underline="true">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="215.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton contentDisplay="CENTER" layoutX="10.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" styleClass="content-area-circle-btns">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="BOOKMARK" size="1.2em" styleClass="content-area-circle-btns-icon" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" layoutX="110.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" styleClass="content-area-circle-btns">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EDIT" size="1.2em" styleClass="content-area-circle-btns-icon" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" layoutX="110.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" styleClass="content-area-circle-btns">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="RECYCLE" size="1.2em" styleClass="content-area-circle-btns-icon" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox alignment="CENTER_LEFT">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox prefHeight="0.0" prefWidth="1200.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="464.0" prefWidth="1077.0">
+               <children>
+                  <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="420.0" prefWidth="1198.0">
+                     <children>
+                        <Label layoutX="133.0" layoutY="18.0" text="Ajout Post" textFill="#48a5ea">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="ajouter" layoutX="316.0" layoutY="379.0" onAction="#AjouterPost" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #48A5EA;" styleClass="ajout-prom-btns" text="Valider" textFill="WHITE" />
+                        <Separator layoutX="133.0" layoutY="68.0" prefHeight="1.0" prefWidth="520.0" />
+                        <JFXButton layoutX="129.0" layoutY="381.0" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #CCC;" styleClass="ajout-prom-btns" text="Reset All" />
+                        <Label fx:id="sujet" layoutX="112.0" layoutY="121.0" prefHeight="21.0" prefWidth="73.0" text="Sujet" />
+                        <TextField id="title" fx:id="title" layoutX="199.0" layoutY="116.0" prefHeight="31.0" prefWidth="143.0" />
+                        <Label fx:id="titre" layoutX="106.0" layoutY="165.0" text="Titre" />
+                        <TextField id="description" fx:id="description" layoutX="195.0" layoutY="160.0" prefHeight="31.0" prefWidth="155.0" />
+                        <Label fx:id="Lien" layoutX="107.0" layoutY="208.0" text="Lien" />
+                        <TextField fx:id="realisateur" layoutX="195.0" layoutY="203.0" prefHeight="31.0" prefWidth="154.0" />
+                        <Label layoutX="107.0" layoutY="254.0" prefHeight="17.0" prefWidth="74.0" text="Date creation" />
+                        <JFXDatePicker id="datecreation" fx:id="datecreation" layoutX="195.0" layoutY="249.0" />
+                        <Label layoutX="120.0" layoutY="314.0" text="Contenu " />
+                        <TextArea id="contenu" fx:id="contenu" layoutX="186.0" layoutY="289.0" prefHeight="79.0" prefWidth="245.0" />
+                        <VBox layoutX="603.0" layoutY="70.0" prefHeight="576.0" prefWidth="349.0">
+                           <children>
+                              <BorderPane fx:id="border_pane1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="343.0" style="-fx-background-color: #AFEEEE;">
+                                 <top>
+                                    <JFXTogglePane BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Pane prefHeight="290.0" prefWidth="360.0" style="-fx-background-color: #008080;">
+                                             <children>
+                                                <ImageView fitHeight="107.0" fitWidth="125.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Projet/media/logo.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label fx:id="txtsujet" layoutX="290.0" layoutY="58.0" prefHeight="19.0" prefWidth="46.0" text="Sujet" textAlignment="RIGHT" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Arial" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="txttitre" layoutX="154.0" layoutY="202.0" prefHeight="30.0" prefWidth="94.0" text="Titre" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="txtdatecreation" layoutX="266.0" layoutY="28.0" prefHeight="17.0" prefWidth="83.0" text="Date creation" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </JFXTogglePane>
+                                 </top>
+                                 <center>
+                                    <JFXTextArea fx:id="txtcontent" prefHeight="270.0" prefWidth="344.0" text="contenu" unFocusColor="WHITE" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Arial Italic" size="14.0" />
+                                       </font>
+                                    </JFXTextArea>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.javafxpi.gui.ItemController">
+   <children>
+      <Pane layoutX="27.0" layoutY="51.0" prefHeight="338.0" prefWidth="896.0" style="-fx-background-color: #fff;">
+         <children>
+            <Separator layoutX="266.0" layoutY="94.0" prefHeight="3.0" prefWidth="539.0" />
+            <Label id="titre" fx:id="titre" alignment="BOTTOM_LEFT" layoutX="360.0" layoutY="53.0" prefHeight="32.0" prefWidth="241.0" text="Quote in progress" textFill="#333333" wrapText="true">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="536.0" layoutY="269.0" text="Réalisateur :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Pane layoutY="336.0" prefHeight="53.0" prefWidth="896.0" style="-fx-background-color: #F0F0F0;">
+               <children>
+                  <Label layoutX="61.0" layoutY="26.0" textFill="#333333">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="614.0" layoutY="12.0" text="Date Création" textFill="#9c5b57">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dayDeb" layoutX="614.0" layoutY="34.0" text="16" textFill="#aeacac">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="monthDeb" layoutX="663.0" layoutY="42.0" text="APR" textFill="#9c5b57" />
+            <Label fx:id="yearDeb" layoutX="663.0" layoutY="60.0" text="2018" textFill="#aeacac" />
+            <Separator layoutX="708.0" layoutY="19.0" orientation="VERTICAL" prefHeight="64.0" prefWidth="0.0" />
+            <ImageView fx:id="image" fitHeight="308.0" fitWidth="241.0" layoutX="25.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Projet/media/logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="description" alignment="TOP_LEFT" layoutX="337.0" layoutY="142.0" prefHeight="122.0" prefWidth="398.0" text="Quand un flic est en cure de désintoxication, il doit faire face à une série d'événements étranges et violents causés par une entité perverse dans l'un des corps." wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="realisateur" layoutX="632.0" layoutY="266.0" text="James arthur">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="310.0" layoutY="57.0" text="Titre:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="303.0" layoutY="110.0" text="Description:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow color="#d7d2d2" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

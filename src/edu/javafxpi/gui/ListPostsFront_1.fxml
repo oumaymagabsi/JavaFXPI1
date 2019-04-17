@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="border_pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.javafxpi.gui.ListPostsFront1Controller">
+   <center>
+      <VBox prefHeight="702.0" prefWidth="950.0">
+         <children>
+            <Pane prefHeight="156.0" prefWidth="950.0" styleClass="head-background" stylesheets="@../../../../../JavaFXPI1/src/edu/javafxpi/css/style.css">
+               <children>
+                  <Label layoutX="48.0" layoutY="52.0" text="User1" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="61.0" layoutY="110.0" text="user1" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="773.0" layoutY="110.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="163.0" ripplerFill="WHITE" style="-fx-background-color: #9C5B57;" text="EDIT PROFILE" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="447.0" layoutY="52.0" text="Cité de la Culture" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox prefHeight="30.0" prefWidth="950.0">
+               <children>
+                  <Label fx:id="lbl_currentprojects" prefHeight="30.0" prefWidth="207.0" text="Current Projects(10)" textFill="#171717">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl_pending" prefHeight="30.0" prefWidth="207.0" text="Pending Projects(12)" textFill="#171717">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl_completed" prefHeight="30.0" prefWidth="207.0" text="Completed Projects(2)" textFill="#171717">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox prefWidth="150.0" />
+               </children>
+            </HBox>
+            <JFXListView fx:id="ListView_Produits" prefHeight="521.0" prefWidth="950.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
